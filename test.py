@@ -101,8 +101,8 @@ if __name__ == "__main__":
                 end = time.time()
                 TTA_TIME = end - start
 
-                NO_TTA_TIME = PER_ITER_TIME - TTA_TIME + NO_TTA_TIME
-                TTA_TIME = PER_ITER_TIME
+                # NO_TTA_TIME = PER_ITER_TIME - TTA_TIME + NO_TTA_TIME
+                # TTA_TIME = PER_ITER_TIME
 
             else:
                 if k < NO_TTA_ITER:
@@ -144,7 +144,7 @@ if __name__ == "__main__":
 
             if k == CHECK_ITER - 1:
                 iter_end_time = time.time()
-                PER_ITER_TIME = iter_end_time - iter_start_time
+                # PER_ITER_TIME = iter_end_time - iter_start_time
 
     END_TIME = time.time()
     print("Inference Time: %.1fs" % (END_TIME - START_TIME))
